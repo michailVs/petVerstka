@@ -5,7 +5,7 @@ pages.addEventListener('click', e => {
     e.preventDefault()
     if (e.target.classList.contains('navbar-item')) {
         clearClass(e.target.innerText)
-        e.target.classList.toggle('page-active')
+        e.target.classList.contains('page-active') ? 0 : e.target.classList.toggle('page-active')
     }
 })
 
@@ -24,5 +24,5 @@ watch.addEventListener('click', btnAction)
 function btnAction() {
     const btn = [view, watch]
     btn.forEach(el => el !== this  && el.classList.contains('btn-active')? el.classList.toggle('btn-active') : 0)
-    this.classList.toggle('btn-active')
+    this.classList.contains('btn-active') ? 0 : this.classList.toggle('btn-active')
 }
