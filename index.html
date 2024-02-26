@@ -7,30 +7,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Pet-Layout</title>
+    <meta name="description" content="This page is a pet-project">
+    <meta name="keywords" content="JS, JavaSctipt, HTML, CSS, Pet-Project, Layout">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="en">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Pet-Layout">
+    <meta property="og:description" content="This page is a pet-project">
+    <meta property="og:url" content="https://michailvs.github.io/petVerstka/">
+    <meta property="og:site_name" content="MichailVse">
+    <meta property="og:locale" content="ru_Ru">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <p class="logo-text">Aeezah.</p>
+        <div class="container" itemscope itemtype="https://schema.org/Product">
+            <a href="#" class="logo" itemprop="logo">
+                <p class="logo-text" itemprop="name">Aeezah.</p>
             </a>
-            <nav class="navbar">
+            <nav class="navbar" itemscope itemtype="https://schema.org/CategoryCodeSet">
                 <ul class="navbar-list">
-                    <li class="navbar-item page-active">New arrivals</li>
-                    <li class="navbar-item">Shop</li>
-                    <li class="navbar-item">Beauty</li>
-                    <li class="navbar-item">Sale</li>
-                    <li class="navbar-item">Journal</li>
+                    <li itemprop="hasCategoryCode" class="navbar-item page-active">New arrivals</li>
+                    <li itemprop="hasCategoryCode" class="navbar-item">Shop</li>
+                    <li itemprop="hasCategoryCode" class="navbar-item">Beauty</li>
+                    <li itemprop="hasCategoryCode" class="navbar-item">Sale</li>
+                    <li itemprop="hasCategoryCode" class="navbar-item">Journal</li>
                 </ul>
             </nav>
             <section class="user">
-                <a href="#" class="cart">
-                    <img src="./assets/cart.svg" alt="Cart" class="cart-img">
-                    <p class="cart-score">0</p>
+                <a href="#" class="cart" itemscope itemtype="https://schema.org/Thing">
+                    <img src="./assets/cart.svg" alt="Cart" class="cart-img" itemprop="image">
+                    <p class="cart-score" itemprop="identifier">0</p>
                 </a>
-                <a href="#" class="profile">
-                    <img src="./assets/user.svg" alt="User profile" class="user-profile">
+                <a href="#" class="profile" itemscope itemtype="https://schema.org/Thing">
+                    <img src="./assets/user.svg" alt="User profile" class="user-profile" itemprop="image">
                 </a>
             </section>
         </div>
