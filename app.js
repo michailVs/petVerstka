@@ -33,15 +33,30 @@ function btnAction() {
 }
 
 
-header.addEventListener('click', e => {
-    if (e.target.classList.contains('bar') && popup.classList.contains('open')) {
+// header.addEventListener('click', e => {
+//     if (e.target.classList.contains('bar') && popup.classList.contains('open')) {
+//         body.classList.toggle('noscroll')
+//         menuBtn.classList.toggle('menu__actove')
+//         popup.classList.toggle('open')
+//         popup.removeChild(navbar)
+//         return
+//     }
+//     if (e.target.classList.contains('bar') && !popup.classList.contains('open')) {
+//         body.classList.toggle('noscroll')
+//         menuBtn.classList.toggle('menu__actove')
+//         popup.classList.toggle('open')
+//         popup.appendChild(navbar)
+//         return
+//     }
+// })
+menuBtn.addEventListener('click', () => {
+    if (popup.classList.contains('open')) {
         body.classList.toggle('noscroll')
         menuBtn.classList.toggle('menu__actove')
         popup.classList.toggle('open')
         popup.removeChild(navbar)
         return
-    }
-    if (e.target.classList.contains('bar') && !popup.classList.contains('open')) {
+    } else {
         body.classList.toggle('noscroll')
         menuBtn.classList.toggle('menu__actove')
         popup.classList.toggle('open')

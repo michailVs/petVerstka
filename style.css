@@ -121,6 +121,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
 }
 .profile {
     margin-top: .44rem;
@@ -436,7 +437,7 @@ body {
     }
     .menu .bar:nth-child(1) {
         content: '';
-        width: 1.8rem;
+        width: 2.5rem;
         height: 2px;
         background-color: #000;
         top: 0;
@@ -446,7 +447,7 @@ body {
     }
     .menu .bar:nth-child(2) {
         content: '';
-        width: 1.8rem;
+        width: 2.5rem;
         height: 2px;
         background-color: #000;
         top: 0.4rem;
@@ -456,7 +457,7 @@ body {
     }
     .menu .bar:nth-child(3) {
         content: '';
-        width: 1.8rem;
+        width: 2.5rem;
         height: 2px;
         background-color: #000;
         top: -0.4rem;
